@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.MainActivity">
+
+  <com.amap.api.maps2d.MapView
+      android:id="@+id/map_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+      <ImageButton
+
+          android:layout_width="50dp"
+          android:layout_height="match_parent"
+          android:background="#fff"
+          android:scaleType="center"
+          android:src="@mipmap/head" />
+
+      <EditText
+
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:hint="查找附近加油站" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="430dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#fff">
+
+      <ImageButton
+          android:id="@+id/btn_head"
+          android:layout_width="50dp"
+          android:layout_height="match_parent"
+          android:background="#fff"
+          android:scaleType="center"
+          android:src="@mipmap/head" />
+
+      <EditText
+          android:id="@+id/edt_find"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:hint="查找附近加油站" />
+    </LinearLayout>
+  </com.amap.api.maps2d.MapView>
+
+</RelativeLayout>
